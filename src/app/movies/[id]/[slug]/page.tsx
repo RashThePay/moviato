@@ -1,5 +1,6 @@
-import { MovieCarousel } from "@/app/page";
+
 import { Heading1 } from "@/components/Heading";
+import { MovieCarousel } from "@/components/MovieCarousel";
 import MovieDetailPage from "@/components/MovieDetails";
 import getTMDB from "@/lib/api";
 import { MovieDetail } from "@/lib/types";

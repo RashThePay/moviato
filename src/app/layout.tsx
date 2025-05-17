@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Providers from "./providers";
 
-const saira = Saira({ variable: "--font-saira" })
+const saira = Saira({ variable: "--font-saira", subsets: ["latin"] })
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
