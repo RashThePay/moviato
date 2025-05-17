@@ -1,11 +1,11 @@
 'use client'
 
-import { Link } from "lucide-react";
 import { Heading1 } from "./Heading";
 import { Button } from "./ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import { Movie } from "@/lib/types";
 import MovieCard from "./MovieCard";
+import Link from "next/link";
 
 export function MovieCarousel({ title, href, movies }: { title: string, href?: string, movies: Movie[] }) {
   return (
