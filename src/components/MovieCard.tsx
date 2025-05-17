@@ -5,6 +5,7 @@ import { LucideStar } from "lucide-react"
 import { genres } from "@/lib/genres"
 import { Skeleton } from "./ui/skeleton";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function MovieCard({ movie }: { movie: Movie }) {
     return (
@@ -12,11 +13,11 @@ export default function MovieCard({ movie }: { movie: Movie }) {
             <Card key={movie.id} className="w-48 h-72 overflow-clip relative group">
                 <Skeleton className=" absolute inset-0" />
 
-                <img
+                <Image
                     loading="eager"
                     className="absolute inset-0 blur-md"
                     width={500} height={500} alt={movie.title} src={"https://image.tmdb.org/t/p/w45" + movie.poster_path} />
-                <img
+                <Image
                     onError={(e)=>(e.target as HTMLImageElement).remove()}
                     loading="lazy"
                     className="absolute inset-0"

@@ -80,7 +80,7 @@ export default function DiscoverPage() {
         if (inView) {
             loadMore()
         }
-    }, [inView, loadMore])
+    }, [inView])
     useEffect(() => {
         setMovies(data?.results || [])
     }, [data])

@@ -18,7 +18,7 @@ export default function InfiniteScroll({ initial, path, getter }: { initial: Mov
         if (inView) {
             loadMore()
         }
-    }, [inView, loadMore])
+    }, [inView])
     return (
         <div className="flex flex-wrap justify-center gap-4">
             {movies.map((movie: Movie) => (
